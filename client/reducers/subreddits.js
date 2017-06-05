@@ -5,6 +5,7 @@ function subreddits (state = [], action) {
     case RECEIVE_POSTS:
       return action.posts
 
+// 4. because the receive posts action has been sent out, this reducer then returns action.posts..??
     default:
       return state
   }
